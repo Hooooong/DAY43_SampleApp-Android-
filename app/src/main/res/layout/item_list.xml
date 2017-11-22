@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textOptions"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCarName"
+        android:layout_alignBottom="@+id/textCarName"
+        android:layout_toEndOf="@+id/textCarName"
+        android:layout_toRightOf="@+id/textCarName"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="TextView2" />
+
+    <TextView
+        android:id="@+id/textZoneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textCarName"
+        android:text="TextView3" />
+
+    <TextView
+        android:id="@+id/textDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textOptions"
+        android:layout_alignBottom="@+id/textOptions"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView4" />
+
+    <TextView
+        android:id="@+id/textFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textCarName"
+        android:text="TextView5" />
+</RelativeLayout>
